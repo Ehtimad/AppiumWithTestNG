@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="tests" name="Suite">
+
+	<!-- Start AndroidRealCableTest -->
+	<test name="androidRealCableTest">
+		<listeners>
+			<listener class-name="com.qa.listeners.TestListener" />
+		</listeners>
+		<parameter name="emulator" value="false" />
+		<parameter name="platformName" value="Android" />
+		<parameter name="platformVersion" value="11" />
+		<parameter name="deviceName" value="Redmi 
+		Note 9 Pro" />
+		<parameter name="udId" value="" />
+		<parameter name="unlockType" value="pin" />
+		<parameter name="unlockKey" value="" />
+		<parameter name="newCommandTimeOut" value="300" />
+		<parameter name="systemPort" value="10000" />
+		<parameter name="chromeDriverPort" value="11000" />
+		<classes>
+			<class name="com.qa.tests.LoginTests">
+				<methods>
+					<include name="emptyUsernamePassword" />
+					<include name="emptyUsername" />
+					<include name="emptyPassword" />
+					<include name="invalidUserName" />
+					<include name="invalidPassword" />
+					<include name="successLoginStandartUserWithSendKeys" />
+					<include name="successLoginStandartUserWithTypeKeyboard" />
+					<include name="successLoginStandartUserPressTap" />
+				</methods>
+			</class>
+			<class name="com.qa.tests.ProductsTests">
+				<methods>
+					<include name="productPage" />
+				</methods>
+			</class>
+			<class name="com.qa.tests.WebViewTests">
+				<methods>
+					<include name="webViewPage" />
+				</methods>
+			</class>
+			<class name="com.qa.tests.GeoLocationTests">
+				<methods>
+					<include name="geoLocationPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<!-- Finish AndroidRealCableTest -->
+
+	<!-- Start AndroidRealWifiTest -->
+	<test name="androidRealWifiTest">
+		<listeners>
+			<listener class-name="com.qa.listeners.TestListener" />
+		</listeners>
+		<parameter name="emulator" value="false" />
+		<parameter name="platformName" value="Android" />
+		<parameter name="platformVersion" value="11" />
+		<parameter name="deviceName" value="" />
+		<parameter name="udId" value="0.0.0.0" />
+		<parameter name="unlockType" value="pin" />
+		<parameter name="unlockKey" value="555000" />
+		<parameter name="newCommandTimeOut" value="300" />
+		<parameter name="systemPort" value="10000" />
+		<parameter name="chromeDriverPort" value="11000" />
+		<classes>
+			<class name="com.qa.tests.LoginTests">
+				<methods>
+					<include name="emptyUsernamePassword" />
+					<include name="emptyUsername" />
+					<include name="emptyPassword" />
+					<include name="invalidUserName" />
+					<include name="invalidPassword" />
+					<include name="successLoginStandartUserWithSendKeys" />
+					<include name="successLoginStandartUserWithTypeKeyboard" />
+					<include name="successLoginStandartUserPressTap" />
+				</methods>
+			</class>
+			<class name="com.qa.tests.ProductsTests">
+				<methods>
+					<include name="productPage" />
+				</methods>
+			</class>
+			<class name="com.qa.tests.WebViewTests">
+				<methods>
+					<include name="webViewPage" />
+				</methods>
+			</class>
+			<class name="com.qa.tests.GeoLocationTests">
+				<methods>
+					<include name="geoLocationPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<!-- Finish AndroidRealWifiTest -->
+
+	<!-- Start AndroidEmulatorTest -->
+	<test name="androidEmulatorTest">
+		<listeners>
+			<listener class-name="com.qa.listeners.TestListener" />
+		</listeners>
+		<parameter name="emulator" value="true" />
+		<parameter name="platformName" value="Android" />
+		<parameter name="platformVersion" value="11" />
+		<parameter name="deviceName" value="Pixel 3" />
+		<parameter name="udId" value="emulator-5556" />
+		<parameter name="avd" value="Pixel_3" />
+		<parameter name="avdLaunchTimeout" value="180000" />
+		<parameter name="unlockType" value="pin" />
+		<parameter name="unlockKey" value="1111" />
+		<parameter name="newCommandTimeOut" value="300" />
+		<parameter name="systemPort" value="10002" />
+		<parameter name="chromeDriverPort" value="11002" />
+		<classes>
+			<class name="com.qa.tests.LoginTests">
+				<methods>
+					<include name="emptyUsernamePassword" />
+					<include name="emptyUsername" />
+					<include name="emptyPassword" />
+					<include name="invalidUserName" />
+					<include name="invalidPassword" />
+					<include name="successLoginStandartUserWithSendKeys" />
+					<include name="successLoginStandartUserWithTypeKeyboard" />
+					<include name="successLoginStandartUserPressTap" />
+				</methods>
+			</class>
+			<class name="com.qa.tests.ProductsTestsWithDeepLink">
+				<methods>
+					<include name="productPage" />
+				</methods>
+			</class>
+			<class name="com.qa.tests.ProductsTests">
+				<methods>
+					<include name="productPage" />
+				</methods>
+			</class>
+			<class name="com.qa.tests.WebViewTests">
+				<methods>
+					<include name="webViewPage" />
+				</methods>
+			</class>
+			<class name="com.qa.tests.GeoLocationTests">
+				<methods>
+					<include name="geoLocationPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<!-- Finish AndroidEmulatorTest -->
+
+	<!-- Start iOSRealTest -->
+	<test name="iOSRealTest">
+		<listeners>
+			<listener class-name="com.qa.listeners.TestListener" />
+		</listeners>
+		<parameter name="emulator" value="false" />
+		<parameter name="platformName" value="iOS" />
+		<parameter name="platformVersion" value="15.6" />
+		<parameter name="deviceName" value="Test iphone" />
+		<parameter name="udId" value="" />
+		<parameter name="unlockType" value="pin" />
+		<parameter name="unlockKey" value="1111" />
+		<parameter name="newCommandTimeOut" value="300" />
+		<parameter name="wdaLocalPort" value="10001" />
+		<parameter name="webkitDebugProxyPort" value="11001" />
+		<classes>
+			<class name="com.qa.tests.LoginTests">
+				<methods>
+					<include name="emptyUsernamePassword" />
+					<include name="emptyUsername" />
+					<include name="emptyPassword" />
+					<include name="invalidUserName" />
+					<include name="invalidPassword" />
+					<include name="successLoginStandartUserWithSendKeys" />
+					<include name="successLoginStandartUserWithTypeKeyboard" />
+					<include name="successLoginStandartUserPressTap" />
+				</methods>
+			</class>
+			<class name="com.qa.tests.ProductsTests">
+				<methods>
+					<include name="productPage" />
+				</methods>
+			</class>
+			<class name="com.qa.tests.WebViewTests">
+				<methods>
+					<include name="webViewPage" />
+				</methods>
+			</class>
+			<class name="com.qa.tests.GeoLocationTests">
+				<methods>
+					<include name="geoLocationPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<!-- Finish iOSRealTest -->
+
+	<!-- Start iOSEmulatorTest -->
+	<test name="iOSEmulatorTest">
+		<listeners>
+			<listener class-name="com.qa.listeners.TestListener" />
+		</listeners>
+		<parameter name="emulator" value="true" />
+		<parameter name="platformName" value="iOS" />
+		<parameter name="platformVersion" value="15.5" />
+		<parameter name="deviceName" value="iPhone 11" />
+		<parameter name="udId"
+			value="55E69475-C48F-4B10-AB26-C0209E216366" />
+		<parameter name="unlockType" value="pin" />
+		<parameter name="unlockKey" value="1111" />
+		<parameter name="newCommandTimeOut" value="300" />
+		<parameter name="wdaLocalPort" value="10001" />
+		<parameter name="webkitDebugProxyPort" value="11001" />
+		<classes>
+			<class name="com.qa.tests.LoginTests">
+				<methods>
+					<include name="emptyUsernamePassword" />
+					<include name="emptyUsername" />
+					<include name="emptyPassword" />
+					<include name="invalidUserName" />
+					<include name="invalidPassword" />
+					<include name="successLoginStandartUserWithSendKeys" />
+					<include name="successLoginStandartUserWithTypeKeyboard" />
+					<include name="successLoginStandartUserPressTap" />
+				</methods>
+			</class>
+			<class name="com.qa.tests.ProductsTestsWithDeepLink">
+				<methods>
+					<include name="productPage" />
+				</methods>
+			</class>
+			<class name="com.qa.tests.ProductsTests">
+				<methods>
+					<include name="productPage" />
+				</methods>
+			</class>
+			<class name="com.qa.tests.WebViewTests">
+				<methods>
+					<include name="webViewPage" />
+				</methods>
+			</class>
+			<class name="com.qa.tests.GeoLocationTests">
+				<methods>
+					<include name="geoLocationPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<!-- Finish iOSEmulatorTest -->
+
+</suite> <!-- Suite -->

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" parallel="tests">
+  <listeners>
+    <listener class-name="com.qa.listeners.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="iOSEmulatorTest(failed)" parallel="tests">
+    <parameter name="emulator" value="true"/>
+    <parameter name="webkitDebugProxyPort" value="11001"/>
+    <parameter name="platformVersion" value="15.5"/>
+    <parameter name="unlockType" value="pin"/>
+    <parameter name="newCommandTimeOut" value="300"/>
+    <parameter name="platformName" value="iOS"/>
+    <parameter name="udId" value="55E69475-C48F-4B10-AB26-C0209E216366"/>
+    <parameter name="unlockKey" value="1111"/>
+    <parameter name="deviceName" value="iPhone 11"/>
+    <parameter name="wdaLocalPort" value="10001"/>
+    <classes>
+      <class name="com.qa.tests.ProductsTestsWithDeepLink">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="productPage"/>
+          <include name="afterSuite"/>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.qa.tests.ProductsTestsWithDeepLink -->
+    </classes>
+  </test> <!-- iOSEmulatorTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

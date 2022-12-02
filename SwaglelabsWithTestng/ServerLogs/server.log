@@ -1,0 +1,5 @@
+2022-11-29 10:21:28:982 [Appium] Welcome to Appium v1.22.3
+2022-11-29 10:21:28:983 [Appium] Non-default server args:
+2022-11-29 10:21:28:983 [Appium]   sessionOverride: true
+2022-11-29 10:21:28:983 [Appium]   logFile: /Users/ehtimad/eclipse-workspace/SwaglelabsWithTestng/ServerLogs/server.log
+2022-11-29 10:21:29:000 [HTTP] Could not start REST http interface listener. The requested port may already be in use. Please make sure there is no other instance of this server running already.

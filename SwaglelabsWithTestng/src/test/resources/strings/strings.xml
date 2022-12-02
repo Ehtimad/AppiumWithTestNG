@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<!-- Error Text -->
+	<string name="err_empty_username_and_password">Username is required</string>
+	<string name="err_empty_username">Username is required</string>
+	<string name="err_empty_password">Password is required</string>
+	<string name="invalid_username">Username and password do not match any user in this service.</string>
+	<string name="invalid_password">Username and password do not match any user in this service.</string>
+	
+	<!-- Get Title -->
+	<string name="product_title">PRODUCTS</string>
+	<string name="web_title">Google</string>
+</resources>

@@ -1,0 +1,33 @@
+1. Fist time change and configured testng.xml file
+a. You must be uncomment platform
+
+		<parameter name="platform" value="Android" />
+		<parameter name="platform" value="iOS" />
+		
+b. You must be uncomment device		
+		<parameter name="device" value="Real" />
+	    <parameter name="device" value="Emulator" />
+		
+c. You must be uncomment type	
+		<parameter name="type" value="" />
+		<parameter name="type" value="Cable" />
+		<parameter name="type" value="Wifi" />
+		
+Forexample:
+If you want to run test at the platform android devices, your devices is real and your devices connected with cable you must be uncomment this line
+<parameter name="platform" value="Android" />
+<parameter name="device" value="Real" />
+<parameter name="type" value="Cable" />
+
+2. You must be write your device parameter
+
+		<parameter name="AndroidRealCablePlatformName" value="Android" />
+		<parameter name="AndroidRealCablePlatformVersion" value="11" />
+		<parameter name="AndroidRealCableDeviceName" value="Redmi Note 9 Pro" />
+		<parameter name="AndroidRealCableUdId" value="b33185ba" />
+		<parameter name="AndroidRealCableAvd" value="" />
+		<parameter name="AndroidRealCableAvdLaunchTimeout" value="" />
+		<parameter name="AndroidRealCableUnlockType" value="pin" />
+		<parameter name="AndroidRealCableUnlockKey" value="555000" />
+		<parameter name="AndroidRealCableNewCommandTimeOut" value="300" />
+
